@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/parquet\ \(1\).png');
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.calculator {
+    background-color: rgb(155, 155, 155);
+    border-radius: 10px;
+    padding: 15px;
+    width: 330px;
+    height: 400px;
+    margin: 0 auto;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "display display display remove"
+        "mc m division multiplication"
+        "seven eigth nine minus"
+        "four five six plus"
+        "one two three equal"
+        "zero sign dot equal"
+    ;
+    text-align: center;
+    gap: 2px;   
+}
+
+.display > .visualization {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #aaa;
+}
+
+.display > .operation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: #eee;
+    font-size: 1.4rem;
+}
+
+.calculator > button{
+    outline: none;
+}
+
+.display {
+    grid-area: display;
+    border: solid #000 1px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.display > div {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.sign {
+    grid-area: sign;
+}
+
+.c {
+    grid-area: mc;
+    background-image: url('./images/deletecan.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: crimson;
+}
+
+.m {
+    grid-area: m;
+}
+
+.division {
+    grid-area: division;
+}
+
+.multiplication {
+    grid-area: multiplication;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eigth {
+    grid-area: eigth;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.op, .equal, .sign {
+    background-color: orange;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.num, .dot {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: rgb(139, 65, 65);
+}
+
+.dot {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    grid-area: dot;
+}
+
+.remove {
+    background-color: rgb(235, 205, 150);
+    grid-area: remove;
+    background-image: url('./images/delete.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
