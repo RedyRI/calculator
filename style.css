@@ -5,14 +5,14 @@
 }
 
 body {
-    background-color: rgb(34, 41, 77);
+    background-color: #00203FFF;
 }
 
 h1 {
     text-align: center;
     margin: 10px;
-    font-size: 3rem;
-    letter-spacing: 0.5rem;
+    font-size: 2.9rem;
+    letter-spacing: 0.1rem;
     font-family: "Montserrat";
     color: orange;
 }
@@ -39,8 +39,7 @@ kbd {
 }
 
 .calculator {
-    background-color: rgb(187, 185, 185);
-    background-color: hsl(117, 29%, 29%);
+    background-color: #616247FF;
     border-radius: 10px;
     padding: 15px;
     width: 330px;
@@ -59,7 +58,7 @@ kbd {
         "zero sign dot equal"
     ;
     text-align: center;
-    gap: 2px;   
+    gap: 0px;   
 }
 
 .display > .visualization {
