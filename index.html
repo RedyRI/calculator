@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Calculator</h1>
+    <h1>CALCULATOR</h1>
     <div class="calculator">
         <div class="display">
             <div class="visualization"></div>
@@ -16,9 +20,9 @@
         </div>
         <button class="remove"></button>
         <button class="c"></button>
-        <button class="m op">x<sup>y</sup></button>
+        <button class="pow op">x<sup>y</sup></button>
         <button class="division op">/</button>
-        <button class="multiplication op">x</button>
+        <button class="multiplication op">X</button>
         <button class="seven num">7</button>
         <button class="eigth num">8</button>
         <button class="nine num">9</button>
@@ -34,6 +38,24 @@
         <button class="sign">-/+</button>
         <button class="dot">.</button>
         <button class="equal">=</button>
+    </div>
+    <div class="key-shortcuts">
+        <ul>
+            <li>
+                use <kbd>Shift</kbd> to toggle the sign of a number
+            </li>
+            <li>
+                use <kbd>Backspace </kbd>to delete one number
+            </li>
+            <li>
+                use <kbd>Del</kbd> to clear the display
+            </li>
+            <li>
+                use <kbd>numeric keyboard</kbd> to insert numbers and operations
+
+            </li>
+        </ul>
+
     </div>
     <script src="./app.js"></script>
 </body>
